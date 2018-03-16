@@ -1,17 +1,4 @@
-<?php
-session_start();
-$file=fopen("Home_browsing.txt","r");
-$num=fgets($file);
-fclose($file);
-if ($_SESSION['come']!='v')
-  {
-    $num++;
-    $file=fopen("Home_browsing.txt","w");
-    fwrite($file,$num);
-    fclose($file);
-    $_SESSION['come']='v';
-  }//update browsing num
-?>
+
 <!doctype html>
 <html>
 <head>
